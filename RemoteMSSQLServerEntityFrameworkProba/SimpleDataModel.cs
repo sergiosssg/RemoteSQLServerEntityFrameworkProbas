@@ -21,7 +21,7 @@ namespace RemoteMSSQLServerEntityFrameworkProba
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("pnone");
+            modelBuilder.HasDefaultSchema("phone");
             base.OnModelCreating(modelBuilder);
         }
     }
