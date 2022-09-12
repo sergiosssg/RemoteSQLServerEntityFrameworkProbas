@@ -49,5 +49,12 @@ using (SqlConnection sqlCon = new SqlConnection(DBFacilities.GetConnectionString
         }
     }
     Console.WriteLine("end of program");
+
+
+/*
+    DbContextOptions<DbAppContext> OptionsOFContext = DataBaseFacilities.OptionsOfDbContext();
+    DbAppContext = new DbAppContext(OptionsOFContext);
+*/
+
 }
 
