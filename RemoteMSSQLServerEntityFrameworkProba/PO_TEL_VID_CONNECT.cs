@@ -1,25 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace RemoteMSSQLServerEntityFrameworkProba
 {
+    [Table("TEL_VID_CONNECT")]
     public partial class PO_TEL_VID_CONNECT
     {
+        [Required]
+        [Key]
+        [Column("ID_CONNECT")]
         public int IDConnect
         { // ID_CONNECT   - идентификатор вида связи
             get;
             set;
         }
 
+        [Column("KOD_CONNECT")]
+        [MaxLength(1)]
         public string KodOfConnect
         { // KOD_CONNECT  - код вида связи
             get;
             set;
         }
 
+        [Column("NAME_CONNECT")]
+        [MaxLength(50)]
         public string NameOfConnect
         { // MAME_CONNECT - наименование связи
             get;
