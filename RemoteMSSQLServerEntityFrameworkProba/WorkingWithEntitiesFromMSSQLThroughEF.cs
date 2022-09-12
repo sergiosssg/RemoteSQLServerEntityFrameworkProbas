@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,8 @@ namespace RemoteMSSQLServerEntityFrameworkProba
 
         static public void AccomplishSelectTo_TEL_VID_CONNECT()
         {
-
+            DbContextOptions<SimpleDataModel> OptionsOFContext = new DbContextOptionsBuilder<SimpleDataModel>().UseSqlServer(  DBFacilities.GetConnectionString()).Options;       /// DataBaseFacilities.OptionsOfDbContext();
+            SimpleDataModel dataModel = new SimpleDataModel(OptionsOFContext);
 
         }
 
