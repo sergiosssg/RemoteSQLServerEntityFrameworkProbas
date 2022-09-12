@@ -2,11 +2,11 @@
 
 using RemoteMSSQLServerEntityFrameworkProba;
 
-static void Main(string[] args)
-{
+
+
     WorkingWithEntitiesFromMSSQLThroughEF.AccomplishSelectTo_TEL_VID_CONNECT();
 
-}
+
 
 
 
