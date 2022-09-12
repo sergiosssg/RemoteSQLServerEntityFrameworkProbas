@@ -8,5 +8,12 @@ namespace RemoteMSSQLServerEntityFrameworkProba
 {
     public partial class WorkingWithEntitiesFromMSSQLThroughEF
     {
+
+        static public void AccomplishSelectTo_TEL_VID_CONNECT()
+        {
+
+
+        }
+
     }
 }
